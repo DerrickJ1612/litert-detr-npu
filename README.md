@@ -40,8 +40,6 @@ Snapdragon devices. The app does not call QNN directly; `DetrDetector` creates
 a LiteRT `CompiledModel` with `Accelerator.NPU`, and LiteRT loads the packaged
 Qualcomm dispatch/runtime libraries when available.
 
-No MediaTek runtime modules are included.
-
 ## Runtime Logs
 
 Use Logcat filters:
