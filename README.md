@@ -79,9 +79,9 @@ Build a debug Android App Bundle:
 The AAB is the preferred distribution format because it can deliver the matching
 Qualcomm runtime split.
 
-## EfficientDet-Lite Project Notes
+## Additional Project Onboarding
 
-For a new EfficientDet-Lite camera project, keep the same runtime packaging
+For a new project, keep the same runtime packaging
 pattern:
 
 1. Copy `litert_npu_runtime_libraries/` into the new project.
@@ -105,10 +105,6 @@ include(":litert_npu_runtime_libraries:qualcomm_runtime_v81")
 8. Use LiteRT `CompiledModel` with `Accelerator.NPU`, then fall back to GPU and
    CPU on failure.
 
-EfficientDet-Lite should replace only the model-specific pieces: preprocessing,
-output parsing, labels, and tensor-shape assumptions. The CameraX pipeline,
-overlay, backend fallback, and Qualcomm runtime delivery pattern can stay the
-same.
 
 ## Model Conversion
 
